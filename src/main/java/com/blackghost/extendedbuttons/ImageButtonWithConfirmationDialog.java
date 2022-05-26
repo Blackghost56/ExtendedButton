@@ -52,7 +52,7 @@ public class ImageButtonWithConfirmationDialog extends androidx.appcompat.widget
 
                 final String handlerName = a.getString(attr);
                 if (handlerName != null) {
-                    setOnConfirmPressedListener(new DeclaredOnClickListener(this, handlerName));
+                    setOnConfirmPressed(new DeclaredOnClickListener(this, handlerName));
                 }
             }
 
@@ -80,7 +80,7 @@ public class ImageButtonWithConfirmationDialog extends androidx.appcompat.widget
 
     public OnClickListener onConfirmPressedListener;
 
-    public void setOnConfirmPressedListener(@Nullable OnClickListener l){
+    public void setOnConfirmPressed(@Nullable OnClickListener l){
         onConfirmPressedListener = l;
     }
 
