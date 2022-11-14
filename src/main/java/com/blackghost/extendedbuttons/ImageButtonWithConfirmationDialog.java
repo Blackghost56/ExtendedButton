@@ -29,6 +29,16 @@ public class ImageButtonWithConfirmationDialog extends androidx.appcompat.widget
         this(context, attrs, 0);
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+        makeDialog();
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+        makeDialog();
+    }
+
     public ImageButtonWithConfirmationDialog(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
